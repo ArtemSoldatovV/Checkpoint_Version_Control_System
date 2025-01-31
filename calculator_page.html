@@ -12,11 +12,11 @@
     <script type="text/babel">
       function Introductory(props) {
 			function Summation(){alert( parseInt(props.number_1)+parseInt(props.number_2) )}
-			function subtraction_1_2(){return  parseInt(props.number_1)-parseInt(props.number_2)}
-			function subtraction_2_1(){return  parseInt(props.number_2)-parseInt(props.number_1)}
-			function multiplication(){return  parseInt(props.number_1)*parseInt(props.number_2)}
-			function division_1_2(){return  parseInt(props.number_1)/parseInt(props.number_2)}
-			function division_2_1(){return  parseInt(props.number_2)/parseInt(props.number_1)}
+			function subtraction_1_2(){alert(  parseInt(props.number_1)-parseInt(props.number_2) )}
+			function subtraction_2_1(){alert(  parseInt(props.number_2)-parseInt(props.number_1) )}
+			function multiplication(){alert(  parseInt(props.number_1)*parseInt(props.number_2) )}
+			function division_1_2(){alert(  parseInt(props.number_1)/parseInt(props.number_2) )}
+			function division_2_1(){alert(  parseInt(props.number_2)/parseInt(props.number_1) )}
 		return <div>
 		<p><button onClick = { Summation } >Summation</button></p>
 		<p><button onClick_1 = { subtraction_1_2 } >subtracting the first from the second</button></p>
