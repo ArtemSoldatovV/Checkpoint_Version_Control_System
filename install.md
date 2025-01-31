@@ -1,3 +1,5 @@
-### 1.0.0 - 31.01.2025
-#### new text
- *  *task-1* - 
+### 1.0.0
+#### installation
+ *  *1* - download archive
+ *  *2* - unzip in a suitable place
+ *  *3* - by file "calculator_page.html"
