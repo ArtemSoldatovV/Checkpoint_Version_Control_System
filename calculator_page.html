@@ -11,19 +11,21 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
       function Introductory(props) {
-			function Summation(){alert( parseInt(props.number_1)+parseInt(props.number_2) )}
-			function subtraction_1_2(){alert( parseInt(props.number_1)-parseInt(props.number_2))}
-			function subtraction_2_1(){alert( parseInt(props.number_2)-parseInt(props.number_1))}
-			function multiplication(){alert( parseInt(props.number_1)*parseInt(props.number_2))}
-			function division_1_2(){alert( parseInt(props.number_1)/parseInt(props.number_2))}
-			function division_2_1(){alert( parseInt(props.number_2)/parseInt(props.number_1))}
+
+			function Summation()		{alert( parseInt(props.number_1) + parseInt(props.number_2) ) }
+			function subtraction_1_2()	{alert( parseInt(props.number_1) - parseInt(props.number_2) ) }
+			function subtraction_2_1()	{alert( parseInt(props.number_2) - parseInt(props.number_1) ) }
+			function multiplication()	{alert( parseInt(props.number_1) * parseInt(props.number_2) ) }
+			function division_1_2()		{alert( parseInt(props.number_1) / parseInt(props.number_2) ) }
+			function division_2_1()		{alert( parseInt(props.number_2) / parseInt(props.number_1) ) }
+
 		return <div>
 		<p><button onClick = { Summation } >Summation</button></p>
-		<p><button onClick_1 = { subtraction_1_2 } >subtracting the first from the second</button></p>
-		<p><button onClick_2 = { subtraction_2_1 } >subtracting the second from the first</button></p>
-		<p><button onClick_3 = { multiplication } >multiplication</button></p>
-		<p><button onClick_4 = { division_1_2 } >divide the first by the second</button></p>
-		<p><button onClick_5 = { division_2_1 } >divide by three by the first</button></p>
+		<p><button onClick = { subtraction_1_2 } >subtracting the first from the second</button></p>
+		<p><button onClick = { subtraction_2_1 } >subtracting the second from the first</button></p>
+		<p><button onClick = { multiplication } >multiplication</button></p>
+		<p><button onClick = { division_1_2 } >divide the first by the second</button></p>
+		<p><button onClick = { division_2_1 } >divide by three by the first</button></p>
 		</div>
         }
 		ReactDOM.createRoot(
@@ -36,4 +38,3 @@
 	
 </body>
 </html>
- <!--<div> <p>число первое: {parseInt(props.number_1)}</p><p>число второе: {parseInt(props.number_2)}</p><p>число сложение: {division_2_1(props.number_1, props.number_2)}</p></div>;*/
