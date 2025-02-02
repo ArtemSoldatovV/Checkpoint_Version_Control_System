@@ -1,40 +1,36 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+<title>Calculator</title>
+<style>
+      .key{
+        height: 5%;
+        width: 5%;
+		margin-top: 0.5%;
+      }
+	  .input_cell{
+		width: 12%;
+	  }
+    </style>
 </head>
-<body>
-    <div id="app"></div>
-        
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel">
-      function Introductory(props) {
-
-			function Summation()		{alert( parseInt(props.number_1) + parseInt(props.number_2) ) }
-			function subtraction_1_2()	{alert( parseInt(props.number_1) - parseInt(props.number_2) ) }
-			function subtraction_2_1()	{alert( parseInt(props.number_2) - parseInt(props.number_1) ) }
-			function multiplication()	{alert( parseInt(props.number_1) * parseInt(props.number_2) ) }
-			function division_1_2()		{alert( parseInt(props.number_1) / parseInt(props.number_2) ) }
-			function division_2_1()		{alert( parseInt(props.number_2) / parseInt(props.number_1) ) }
-
-		return <div>
-		<p><button onClick = { Summation } >Summation</button></p>
-		<p><button onClick = { subtraction_1_2 } >subtracting the first from the second</button></p>
-		<p><button onClick = { subtraction_2_1 } >subtracting the second from the first</button></p>
-		<p><button onClick = { multiplication } >multiplication</button></p>
-		<p><button onClick = { division_1_2 } >divide the first by the second</button></p>
-		<p><button onClick = { division_2_1 } >divide by three by the first</button></p>
-		</div>
-        }
-		ReactDOM.createRoot(
-            document.getElementById("app")
-        )
-        .render(
-            <Introductory number_1="2" number_2="33" />
-        );
-    </script>
-	
+<body bgcolor= "#8CB3B7" >
+<form name="calculator" >
+<input class="key" type="button" value="1" onClick="document.calculator.ans.value+='1'">
+<input class="key" type="button" value="2" onClick="document.calculator.ans.value+='2'">
+<input class="key" type="button" value="3" onClick="document.calculator.ans.value+='3'"><br>
+<input class="key" type="button" value="4" onClick="document.calculator.ans.value+='4'">
+<input class="key" type="button" value="5" onClick="document.calculator.ans.value+='5'">
+<input class="key" type="button" value="6" onClick="document.calculator.ans.value+='6'"><br>
+<input class="key" type="button" value="7" onClick="document.calculator.ans.value+='7'">
+<input class="key" type="button" value="8" onClick="document.calculator.ans.value+='8'">
+<input class="key" type="button" value="9" onClick="document.calculator.ans.value+='9'"><br>
+<input class="key" type="button" value="-" onClick="document.calculator.ans.value+='-'">
+<input class="key" type="button" value="+" onClick="document.calculator.ans.value+='+'">
+<input class="key" type="button" value="*" onClick="document.calculator.ans.value+='*'"><br>
+<input class="key" type="button" value="/" onClick="document.calculator.ans.value+='/'">
+<input class="key" type="button" value="0" onClick="document.calculator.ans.value+='0'">
+<input class="key" type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)"><br>
+<input class="key" type="reset" value="Reset">
+<br>result -> <input type="textfield" name="ans" value="">
+</form>
 </body>
 </html>
